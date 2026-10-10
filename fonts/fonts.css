@@ -1,0 +1,36 @@
+/* Noto Sans TC、Noto Serif TC。SIL Open Font License 1.1，見同目錄 OFL.txt。自託管，不連外部字型服務。 */
+@font-face {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("noto-sans-tc-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("noto-sans-tc-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("noto-sans-tc-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Noto Serif TC";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("noto-serif-tc-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Noto Serif TC";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("noto-serif-tc-900.woff2") format("woff2");
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>無障礙說明｜客家全球新聞網</title>
+<meta name="description" content="客家全球新聞網的無障礙做法、字級、對比、鍵盤操作與響應式版面。以 WCAG 2.1 AA 為自評方向，尚未申請無障礙標章。">
+<meta name="theme-color" content="#1a365d">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:type" content="website">
+<meta property="og:title" content="無障礙說明｜客家全球新聞網">
+<meta property="og:description" content="無障礙做法與響應式版面。尚未申請無障礙標章。">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="style.css">
+<script>
+try{var c=localStorage.getItem('hgnn-contrast');if(c==='more')document.documentElement.setAttribute('data-contrast','more');var f=parseInt(localStorage.getItem('hgnn-font')||'0',10);var sizes=['100%','112.5%','125%'];if(f>0&&f<sizes.length)document.documentElement.style.fontSize=sizes[f];}catch(e){}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">跳至主要內容</a>
+<div class="topbar"><div class="wrap"><span id="today">客家全球新聞網</span><span class="tools"><button type="button" id="font-dec" aria-label="縮小字級">字級 −</button><button type="button" id="font-inc" aria-label="放大字級">字級 ＋</button><button type="button" id="contrast" aria-pressed="false">提高對比</button><a href="accessibility.html">無障礙</a></span></div></div>
+<header class="masthead"><div class="wrap">
+  <div class="mastrow">
+    <a href="./" class="brand"><span class="mark" aria-hidden="true">客</span><span><span class="sitename">客家全球新聞網</span><small>HAKKA GLOBAL NEWS NETWORK</small></span></a>
+    <p class="edition"><span class="pill">展示版本</span>尚未正式發刊</p>
+  </div>
+  <p class="tagline">服務臺灣客家社區與全球客家社群。本版新聞皆為範例，不是政府機關網站。</p>
+</div></header>
+<nav class="sitenav" aria-label="網站導覽"><div class="wrap">
+  <a href="./">首頁</a>
+  <a href="about.html">關於我們</a>
+  <a href="organization.html">組織與聯絡</a>
+  <a href="accessibility.html" aria-current="page">無障礙說明</a>
+</div></nav>
+<nav class="catnav" aria-label="新聞分類"><div class="wrap" id="tabs">
+  <a href="./" data-c="首頁">首頁</a>
+  <a href="./#客家文化" data-c="客家文化">客家文化</a>
+  <a href="./#客庄新聞" data-c="客庄新聞">客庄新聞</a>
+  <a href="./#客語推廣" data-c="客語推廣">客語推廣</a>
+  <a href="./#節慶活動" data-c="節慶活動">節慶活動</a>
+  <a href="./#產業與觀光" data-c="產業與觀光">產業與觀光</a>
+  <a href="./#全球客家" data-c="全球客家">全球客家</a>
+  <a href="./#政策與補助" data-c="政策與補助">政策與補助</a>
+</div></nav>
+<main id="main" class="wrap" tabindex="-1">
+  <div class="cols page-layout">
+    <article class="page">
+      <h1>無障礙說明</h1>
+      <p class="lede">本站以網頁內容可及性指南 WCAG 2.1 的 AA 等級作為自評方向，讓鍵盤、放大文字與手機閱讀都能完成主要任務。</p>
+      <div class="callout"><p>本站<strong>尚未</strong>申請或取得國家通訊傳播委員會的無障礙標章。這一頁只說明目前做了什麼、還沒做什麼，不表示已經通過檢測。</p></div>
+
+      <h2 id="done">已經做的</h2>
+      <ul>
+        <li>頁面語言標成 zh-Hant-TW。</li>
+        <li>每個頁面有「跳至主要內容」，用鍵盤跳過頁首。</li>
+        <li>標題按層級使用，連結文字寫出目的，不用「點這裡」。</li>
+        <li>分類除了顏色，還有文字標籤。</li>
+        <li>焦點外框清楚。滑鼠點選不會留下多餘外框。</li>
+        <li>字級三階：標準、放大、再放大。按鈕在每一頁上方。</li>
+        <li>「提高對比」把背景改成白底、文字改成黑字、連結加底線。</li>
+        <li>聯絡表單有可見標籤、錯誤提示，錯誤時焦點會移到說明。</li>
+        <li>手機上摘要超過三行可展開，按鈕文字是「展開摘要」。</li>
+        <li>系統若設定減少動態，本站不另外做動畫。</li>
+        <li>沒有自動播放的聲音或影片。</li>
+        <li>字型放在本站，不連到外部字型服務。</li>
+      </ul>
+
+      <h2 id="howto">怎麼操作</h2>
+      <ul>
+        <li>Tab 移到下一個連結或按鈕，Shift+Tab 回到上一個。</li>
+        <li>Enter 開啟連結或按下按鈕。分類列用的是連結，可以在新分頁打開。</li>
+        <li>字級與對比會記在這台裝置，下次開站仍在。</li>
+        <li>手機寬度低於六百四十像素時，卡片改成一欄，分類列可以橫向滑動。</li>
+      </ul>
+
+      <h2 id="rwd">響應式版面</h2>
+      <p>同一個網站服務電腦與手機，不另做簡略版。</p>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>寬度</th><th>版面</th></tr></thead>
+          <tbody>
+            <tr><td>九百零一像素以上</td><td>頭條橫跨全寬，下方分成新聞欄與側欄。</td></tr>
+            <tr><td>九百像素以下</td><td>頭條、新聞與側欄改成上下排列。內頁目錄移到正文前面。</td></tr>
+            <tr><td>六百四十像素以下</td><td>卡片一欄、站名縮小、摘要預設三行並可展開。</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="limits">已知限制</h2>
+      <ul>
+        <li>沒有客語朗讀、手語或點字版。介面是繁體中文。</li>
+        <li>沒有全文語音。</li>
+        <li>首頁新聞由指令碼排出。沒有 JavaScript 時，仍可閱讀關於我們、組織與聯絡和本頁。</li>
+        <li>範例稿沒有圖表。正式營運若放圖，會寫替代文字，並避免只用顏色區分數據。</li>
+        <li>尚未做人工輔助科技的完整檢測，也還沒有標章。</li>
+      </ul>
+
+      <h2 id="feedback">問題回報</h2>
+      <p>若某個步驟無法用鍵盤完成、對比不足，或手機版擠在一起，請用<a href="organization.html#contact">聯絡表單</a>的「無障礙問題」。展示期間表單不會真正寄出，請同時保留您的意見，等單位信箱公告後再送一次。</p>
+    </article>
+    <aside class="side" aria-label="本頁目錄">
+      <div class="box">
+        <h3>本頁目錄</h3>
+        <ul class="toc">
+          <li><a href="#done">已經做的</a></li>
+          <li><a href="#howto">怎麼操作</a></li>
+          <li><a href="#rwd">響應式版面</a></li>
+          <li><a href="#limits">已知限制</a></li>
+          <li><a href="#feedback">問題回報</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</main>
+<footer><div class="wrap">
+  <b>客家全球新聞網</b>
+  <p>展示版本。新聞卡片皆為虛構範例，非正式報導，沒有受訪者。本站不是客家委員會或任何政府機關的網站。</p>
+  <ul class="footlinks">
+    <li><a href="./">首頁</a></li>
+    <li><a href="about.html">關於我們</a></li>
+    <li><a href="organization.html">組織與聯絡</a></li>
+    <li><a href="accessibility.html">無障礙說明</a></li>
+    <li><a href="article.html">範例稿一覽</a></li>
+  </ul>
+  <p>© 2026 客家全球新聞網籌備展示。正式單位名稱、統一編號與聯絡方式待立案後公告。</p>
+</div></footer>
+<script src="a11y.js"></script>
+</body>
+</html>
