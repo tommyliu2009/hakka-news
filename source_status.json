@@ -1,9 +1,161 @@
 {
-  "updated": "2026-10-10 19:00",
-  "sources": {
-    "展示樣本": {
-      "ok": true,
-      "note": "28 則虛構範例稿，非正式新聞，沒有受訪者"
-    }
+ "updated": "2026-10-11 04:28",
+ "sources": {
+  "內政部移民署": {
+   "ok": true,
+   "note": "20 則，相關 0"
+  },
+  "行政院": {
+   "ok": true,
+   "note": "100 則，相關 0"
+  },
+  "衛生福利部": {
+   "ok": true,
+   "note": "20 則，相關 0"
+  },
+  "教育部": {
+   "ok": true,
+   "note": "50 則，相關 0"
+  },
+  "中央社-政治": {
+   "ok": true,
+   "note": "20 則，相關 0"
+  },
+  "中央社-社會": {
+   "ok": true,
+   "note": "20 則，相關 0"
+  },
+  "中央社-地方": {
+   "ok": true,
+   "note": "20 則，相關 0"
+  },
+  "中央社-國際": {
+   "ok": true,
+   "note": "20 則，相關 0"
+  },
+  "中央社-生活": {
+   "ok": true,
+   "note": "20 則，相關 0"
+  },
+  "官方/中央社索引 (site:gov.tw)": {
+   "ok": true,
+   "note": "候選 66 則"
+  },
+  "官方/中央社索引 (site:cna.com.tw)": {
+   "ok": true,
+   "note": "候選 13 則"
+  },
+  "官方/中央社索引 (site:hakka.gov.tw)": {
+   "ok": true,
+   "note": "候選 19 則"
+  },
+  "官方/中央社索引 (site:gov.taipei)": {
+   "ok": true,
+   "note": "候選 14 則"
+  },
+  "索引 ntpc.gov.tw": {
+   "ok": true,
+   "note": "相關 5"
+  },
+  "索引 tycg.gov.tw": {
+   "ok": true,
+   "note": "相關 4"
+  },
+  "索引 taichung.gov.tw": {
+   "ok": true,
+   "note": "相關 2"
+  },
+  "索引 tainan.gov.tw": {
+   "ok": true,
+   "note": "相關 7"
+  },
+  "索引 kcg.gov.tw": {
+   "ok": true,
+   "note": "相關 3"
+  },
+  "索引 klcg.gov.tw": {
+   "ok": true,
+   "note": "相關 1"
+  },
+  "索引 hccg.gov.tw": {
+   "ok": true,
+   "note": "相關 0"
+  },
+  "索引 hsinchu.gov.tw": {
+   "ok": true,
+   "note": "相關 2"
+  },
+  "索引 miaoli.gov.tw": {
+   "ok": true,
+   "note": "相關 1"
+  },
+  "索引 chcg.gov.tw": {
+   "ok": true,
+   "note": "相關 0"
+  },
+  "索引 nantou.gov.tw": {
+   "ok": true,
+   "note": "相關 1"
+  },
+  "索引 yunlin.gov.tw": {
+   "ok": true,
+   "note": "相關 1"
+  },
+  "索引 chiayi.gov.tw": {
+   "ok": true,
+   "note": "相關 0"
+  },
+  "索引 cyhg.gov.tw": {
+   "ok": true,
+   "note": "相關 1"
+  },
+  "索引 pthg.gov.tw": {
+   "ok": true,
+   "note": "相關 0"
+  },
+  "索引 e-land.gov.tw": {
+   "ok": true,
+   "note": "相關 0"
+  },
+  "索引 hl.gov.tw": {
+   "ok": true,
+   "note": "相關 0"
+  },
+  "索引 taitung.gov.tw": {
+   "ok": true,
+   "note": "相關 0"
+  },
+  "索引 penghu.gov.tw": {
+   "ok": true,
+   "note": "相關 0"
+  },
+  "索引 kinmen.gov.tw": {
+   "ok": true,
+   "note": "相關 0"
+  },
+  "索引 matsu.gov.tw": {
+   "ok": true,
+   "note": "相關 0"
+  },
+  "索引 mol.gov.tw": {
+   "ok": true,
+   "note": "相關 0"
+  },
+  "索引 ocac.gov.tw": {
+   "ok": true,
+   "note": "相關 0"
+  },
+  "索引 moi.gov.tw": {
+   "ok": true,
+   "note": "相關 0"
+  },
+  "_原文取不到發布日（未收錄）": {
+   "ok": true,
+   "note": "16 則"
+  },
+  "_原文無法讀取的網站（未收錄）": {
+   "ok": false,
+   "note": "gdd.hsinchu.gov.tw 1則(SSLError); www.hsinchu.gov.tw 1則(SSLError); civil.yunlin.gov.tw 1則(HTTP 403); edu.cyhg.gov.tw 1則(SSLError)"
   }
+ }
 }
