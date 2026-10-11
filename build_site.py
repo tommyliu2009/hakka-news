@@ -32,6 +32,8 @@ for key, v in db.items():
         'sample': bool(v.get('sample')),
         'url': v.get('url') or ('article.html#' + id_),
     }
+    if v.get('topic'):
+        item['topic'] = v['topic']
     if item['sample']:
         item['url'] = 'article.html#' + id_
     items.append(item)
