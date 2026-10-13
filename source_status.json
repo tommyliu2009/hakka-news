@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13 04:36",
+ "updated": "2026-10-14 05:02",
  "sources": {
   "內政部移民署": {
    "ok": true,
@@ -39,7 +39,7 @@
   },
   "官方/中央社索引 (site:gov.tw)": {
    "ok": true,
-   "note": "候選 80 則"
+   "note": "候選 75 則"
   },
   "官方/中央社索引 (site:cna.com.tw)": {
    "ok": true,
@@ -47,19 +47,19 @@
   },
   "官方/中央社索引 (site:hakka.gov.tw)": {
    "ok": true,
-   "note": "候選 34 則"
+   "note": "候選 47 則"
   },
   "官方/中央社索引 (site:gov.taipei)": {
    "ok": true,
-   "note": "候選 4 則"
+   "note": "候選 6 則"
   },
   "索引 ntpc.gov.tw": {
    "ok": true,
-   "note": "相關 6"
+   "note": "相關 4"
   },
   "索引 tycg.gov.tw": {
    "ok": true,
-   "note": "相關 1"
+   "note": "相關 3"
   },
   "索引 taichung.gov.tw": {
    "ok": true,
@@ -67,15 +67,15 @@
   },
   "索引 tainan.gov.tw": {
    "ok": true,
-   "note": "相關 4"
+   "note": "相關 3"
   },
   "索引 kcg.gov.tw": {
    "ok": true,
-   "note": "相關 0"
+   "note": "相關 2"
   },
   "索引 klcg.gov.tw": {
    "ok": true,
-   "note": "相關 1"
+   "note": "相關 0"
   },
   "索引 hccg.gov.tw": {
    "ok": true,
@@ -83,7 +83,7 @@
   },
   "索引 hsinchu.gov.tw": {
    "ok": true,
-   "note": "相關 3"
+   "note": "相關 5"
   },
   "索引 miaoli.gov.tw": {
    "ok": true,
@@ -95,7 +95,7 @@
   },
   "索引 nantou.gov.tw": {
    "ok": true,
-   "note": "相關 0"
+   "note": "相關 1"
   },
   "索引 yunlin.gov.tw": {
    "ok": true,
@@ -151,11 +151,11 @@
   },
   "_原文取不到發布日（未收錄）": {
    "ok": true,
-   "note": "11 則"
+   "note": "18 則"
   },
   "_原文無法讀取的網站（未收錄）": {
    "ok": false,
-   "note": "www.hccg.gov.tw 1則(HTTP 403); www.taitung.gov.tw 2則(SSLError); www.hsinchu.gov.tw 1則(SSLError)"
+   "note": "www.hccg.gov.tw 1則(HTTP 403); www.taitung.gov.tw 2則(SSLError); zhudong.hsinchu.gov.tw 1則(SSLError); gdd.hsinchu.gov.tw 1則(SSLError); www.hsinchu.gov.tw 1則(SSLError)"
   }
  }
 }
