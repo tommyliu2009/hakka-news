@@ -23,7 +23,13 @@ def hit(s):
 
 # ---- 補助 ----
 subs = []
-for x in csv.DictReader(open(SUB_CSV, encoding='utf-8-sig')):
+import sys; sys.path.insert(0, '/workspace/shared-data')
+try:
+    import shared; _SUB = shared.load('subsidies_latest.json'); _SUB = _SUB['rows'] if _SUB else None
+    _TC = shared.load('tender_cases_90d.json')
+except Exception: _SUB = _TC = None
+print('補助來源：' + ('共用檔' if _SUB else '補助王 CSV') + '；標案來源：' + ('共用檔' if _TC else '標案王原始檔'))
+for x in (_SUB or csv.DictReader(open(SUB_CSV, encoding='utf-8-sig'))):
     if x['狀態'] == '歷史(已結束)' or x.get('資料類型') == '歷史': continue
     name, org, tgt = x['補助名稱'], x['主辦單位'], x['對象']
     ok = hit(name) or any(k in org for k in UK)
@@ -51,7 +57,7 @@ def roc(s):
     return f'{int(m[1])+1911:04d}-{int(m[2]):02d}-{int(m[3]):02d}' if m else ''
 since = int((TODAY - dt.timedelta(days=90)).strftime('%Y%m%d'))
 cases = {}
-for f in sorted(glob.glob(TK + '/raw/day/*.json')):
+for f in ([] if _TC else sorted(glob.glob(TK + '/raw/day/*.json'))):
     if int(os.path.basename(f)[:8]) < since: continue
     try: recs = json.load(open(f))['records']
     except Exception: continue
@@ -70,13 +76,16 @@ for f in sorted(glob.glob(TK + '/raw/day/*.json')):
             c['win'] = [n for n, v in nk.items() if any(q.endswith(':得標廠商') for q in v)] or c['win']
         elif t in FAIL and d >= c['fail']: c['fail'] = d; c['furl'] = link(x)
 tens = []
+if _TC:  # 共用檔已含明細欄位（budget/dl/amt），這裡只做本族群篩選
+    cases = {k: c for k, c in _TC['cases'].items() if hit(c['title']) or any(u in c['unit'] for u in UK)}
 cut60 = int((TODAY - dt.timedelta(days=60)).strftime('%Y%m%d'))
 for k, c in cases.items():
     last = max(c['pub'], c['aw'], c['fail'])
     if last < cut60: continue
     budget = dl = None; amt = None
+    if 'dl' in c: budget, dl, amt = c['budget'], c['dl'], c['amt']
     p = TK + '/raw/detail/' + hashlib.md5(k.encode()).hexdigest() + '.json'
-    if os.path.exists(p):
+    if 'dl' not in c and os.path.exists(p):
         try:
             for r in json.load(open(p))['recs']:
                 budget = money(r.get('採購資料:預算金額') or r.get('已公告資料:預算金額')) or budget
