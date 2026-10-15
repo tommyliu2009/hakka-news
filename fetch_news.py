@@ -5,6 +5,7 @@
 不得把未查證的人名、引述或數字補進摘要。
 用法: python3 fetch_news.py [天數，預設30]"""
 import sys, json, re, time, html, datetime as dt, urllib.parse, concurrent.futures as cf
+import sys as _s; _s.path.insert(0, '/workspace/shared-data'); import news_filter  # 共用過濾：重複比對用正規化標題
 import feedparser, requests, ssl
 from requests.adapters import HTTPAdapter
 class _SSLAdapter(HTTPAdapter):
@@ -174,11 +175,13 @@ def main():
     try: rejected = set(json.load(open('rejected.json')))
     except Exception: rejected = set()
     known_titles = {v['title'] for v in db.values()} | rejected
+    known_norm = news_filter.known_keys(db.values()) | {news_filter.norm_title(x) for x in rejected}
+    known_urls = set(db) | {v.get('url') for v in db.values() if v.get('url')}
     seen = set(); todo = []
     for c in cand:
         if not c['pub'] or time.mktime(c['pub']) < cutoff: continue
         key = re.sub(r'\W', '', c['title'])[:40]
-        if key in seen or c['title'] in known_titles: continue
+        if key in seen or c['title'] in known_titles or news_filter.norm_title(c['title']) in known_norm or (c.get('url') and c['url'] in known_urls): continue
         seen.add(key); todo.append(c)
     print('新候選', len(todo))
     if gnewsdecoder is None and any(c['url'] is None for c in todo):

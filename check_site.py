@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""檢查展示站：範例標示、欄目、頁面與 Python 語法。"""
+"""檢查網站：已上線稿件的欄目與字數、範例稿標示、頁面與 Python 語法（2026-10-16 改為接受真實新聞）。"""
 import json, pathlib, py_compile, re, sys
 from html.parser import HTMLParser
 
@@ -35,23 +35,21 @@ def main():
     data = (ROOT / 'data.js').read_text()
     if 'window.NEWS=' not in data or 'window.UPDATED=' not in data:
         sys.exit('data.js 格式不對')
-    if len(db) < 28:
-        sys.exit('範例稿不足')
+    # 資料庫同時有範例稿與真實新聞；範例稿要有標示，真實新聞只檢查已上線（summary_ok）的稿件
     counts = {c: 0 for c in CATS}
     for key, v in db.items():
-        if not v.get('sample') or not v.get('summary_ok'):
-            sys.exit('展示資料庫應全部是已完成的範例：' + key)
-        if not v['title'].startswith('【範例】') or '範例' not in v['summary']:
-            sys.exit('缺少範例標示：' + key)
+        if not v.get('summary_ok'):
+            continue  # 待寫摘要的候選稿不會上線，不檢查
         if v['category'] not in CATS:
             sys.exit('欄目錯誤：' + key)
         if not 50 <= len(v['summary']) <= 200:
             sys.exit('字數錯誤：' + key)
-        if any(ch in v['title'] + v['summary'] for ch in '「」『』'):
-            sys.exit('範例稿含引號：' + key)
+        if v.get('sample'):
+            if not v['title'].startswith('【範例】') or '範例' not in v['summary']:
+                sys.exit('範例稿缺少標示：' + key)
+        elif '【範例】' in v['title']:
+            sys.exit('真實新聞不應有範例標示：' + key)
         counts[v['category']] += 1
-    if any(n < 4 for n in counts.values()):
-        sys.exit('有欄目少於 4 則：' + str(counts))
     for name in PAGES:
         text = (ROOT / name).read_text()
         bad = [ch for ch in SIMPLIFIED if ch in text]
