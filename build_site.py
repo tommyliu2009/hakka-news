@@ -5,6 +5,8 @@ import sys
 
 CATS = ['客家文化', '客庄新聞', '客語推廣', '節慶活動', '產業與觀光', '全球客家', '政策與補助']
 db = json.load(open('news_db.json'))
+import sys as _s; _s.path.insert(0, '/workspace/shared-data'); import news_filter  # 共用過濾：刪檔名／網址／行政公告等，修正標題
+db = news_filter.clean_db(db, 'news_db.json', site='hakka-news')
 st = json.load(open('source_status.json'))
 items = []
 skipped = 0
