@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17 05:08",
+ "updated": "2026-10-18 05:06",
  "sources": {
   "內政部移民署": {
    "ok": true,
@@ -39,19 +39,19 @@
   },
   "官方/中央社索引 (site:gov.tw)": {
    "ok": true,
-   "note": "候選 62 則"
+   "note": "候選 92 則"
   },
   "官方/中央社索引 (site:cna.com.tw)": {
    "ok": true,
-   "note": "候選 31 則"
+   "note": "候選 38 則"
   },
   "官方/中央社索引 (site:hakka.gov.tw)": {
    "ok": true,
-   "note": "候選 40 則"
+   "note": "候選 88 則"
   },
   "官方/中央社索引 (site:gov.taipei)": {
    "ok": true,
-   "note": "候選 9 則"
+   "note": "候選 12 則"
   },
   "索引 ntpc.gov.tw": {
    "ok": true,
@@ -59,7 +59,7 @@
   },
   "索引 tycg.gov.tw": {
    "ok": true,
-   "note": "相關 3"
+   "note": "相關 5"
   },
   "索引 taichung.gov.tw": {
    "ok": true,
@@ -67,15 +67,15 @@
   },
   "索引 tainan.gov.tw": {
    "ok": true,
-   "note": "相關 8"
+   "note": "相關 7"
   },
   "索引 kcg.gov.tw": {
    "ok": true,
-   "note": "相關 4"
+   "note": "相關 3"
   },
   "索引 klcg.gov.tw": {
    "ok": true,
-   "note": "相關 1"
+   "note": "相關 0"
   },
   "索引 hccg.gov.tw": {
    "ok": true,
@@ -87,7 +87,7 @@
   },
   "索引 miaoli.gov.tw": {
    "ok": true,
-   "note": "相關 1"
+   "note": "相關 2"
   },
   "索引 chcg.gov.tw": {
    "ok": true,
@@ -95,11 +95,11 @@
   },
   "索引 nantou.gov.tw": {
    "ok": true,
-   "note": "相關 2"
+   "note": "相關 3"
   },
   "索引 yunlin.gov.tw": {
    "ok": true,
-   "note": "相關 2"
+   "note": "相關 1"
   },
   "索引 chiayi.gov.tw": {
    "ok": true,
@@ -111,19 +111,19 @@
   },
   "索引 pthg.gov.tw": {
    "ok": true,
-   "note": "相關 0"
+   "note": "相關 1"
   },
   "索引 e-land.gov.tw": {
    "ok": true,
-   "note": "相關 0"
+   "note": "相關 1"
   },
   "索引 hl.gov.tw": {
    "ok": true,
-   "note": "相關 0"
+   "note": "相關 1"
   },
   "索引 taitung.gov.tw": {
    "ok": true,
-   "note": "相關 2"
+   "note": "相關 4"
   },
   "索引 penghu.gov.tw": {
    "ok": true,
@@ -151,11 +151,11 @@
   },
   "_原文取不到發布日（未收錄）": {
    "ok": true,
-   "note": "20 則"
+   "note": "28 則"
   },
   "_原文無法讀取的網站（未收錄）": {
    "ok": false,
-   "note": "ttdp.taitung.gov.tw 1則(SSLError); civil.yunlin.gov.tw 1則(HTTP 403)"
+   "note": "www.taichung.gov.tw 1則(ReadTimeout); www.taitung.gov.tw 2則(SSLError); ttdp.taitung.gov.tw 1則(SSLError); www.hsinchu.gov.tw 1則(SSLError); eservices.hl.gov.tw 1則(SSLError)"
   }
  }
 }
