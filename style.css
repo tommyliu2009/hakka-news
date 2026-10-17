@@ -327,3 +327,9 @@ html[data-contrast="more"] .badge-sample { background: #000; color: #fff; }
   .card, .lead, .box { break-inside: avoid; }
   a { text-decoration: underline; }
 }
+/* 仁禾廣告：PC 右上、手機標題下方 */
+.rhad{float:right;order:9;margin-left:auto;display:flex;flex-direction:column;align-items:center;background:#fff7ee;border:2px solid #f08a24;border-radius:8px;padding:6px 16px;font-size:14px;line-height:1.4;text-align:center}
+.rhad b{color:#d2691e;font-size:16px}.rhad a,.rhm a{color:#1f4e8c}
+.rhm{display:none}
+@media(max-width:900px){.rhad{display:none}.rhm{display:block;background:#fff7ee;border:2px solid #f08a24;border-radius:8px;margin:12px auto 0;padding:8px 12px;text-align:center;font-size:14px;line-height:1.6;max-width:calc(100% - 28px)}.rhm b{color:#d2691e;font-size:18px}}
+@media(min-width:901px){.masthead .mastrow{margin-right:250px}}
