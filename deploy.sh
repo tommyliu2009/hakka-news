@@ -9,6 +9,7 @@ if [ "${1:-}" != "publish" ]; then python3 fetch_news.py "${1:-3}"; python3 fetc
 python3 fetch_industry.py --retag   # 重新標記「產業報導」
 python3 extras.py || echo "補助／標案資訊更新失敗，沿用上一版 extras.js"   # 讀當時最新的補助王、標案王資料
 python3 build_site.py
+python3 /workspace/shared-data/ga_inject.py . || echo "⚠️ GA 程式碼補入或檢查有問題，請看上面訊息"   # GA4：所有頁面 <head> 補 gtag（2026-10-18）
 git add -A
 if git diff --cached --quiet; then echo "資料無變動，不需部署"; exit 0; fi
 git commit -qm "新聞更新 $(TZ=Asia/Taipei date '+%Y-%m-%d %H:%M')"
