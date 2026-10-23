@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24 05:03",
+ "updated": "2026-10-24 07:42",
  "sources": {
   "內政部移民署": {
    "ok": true,
@@ -39,7 +39,7 @@
   },
   "官方/中央社索引 (site:gov.tw)": {
    "ok": true,
-   "note": "候選 53 則"
+   "note": "候選 57 則"
   },
   "官方/中央社索引 (site:cna.com.tw)": {
    "ok": false,
@@ -47,7 +47,7 @@
   },
   "官方/中央社索引 (site:hakka.gov.tw)": {
    "ok": true,
-   "note": "候選 45 則"
+   "note": "候選 50 則"
   },
   "官方/中央社索引 (site:gov.taipei)": {
    "ok": true,
