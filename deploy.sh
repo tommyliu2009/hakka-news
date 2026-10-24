@@ -11,6 +11,7 @@ python3 fetch_industry.py --retag   # 重新標記「產業報導」
 python3 extras.py || echo "補助／標案資訊更新失敗，沿用上一版 extras.js"   # 讀當時最新的補助王、標案王資料
 python3 build_site.py
 python3 /workspace/shared-data/ga_inject.py . || echo "⚠️ GA 程式碼補入或檢查有問題，請看上面訊息"   # GA4：所有頁面 <head> 補 gtag（2026-10-18）
+python3 /workspace/shared-data/matrix/matrix_apply.py . || { [ $? -eq 2 ] && { echo "⛔ 聯智↔仁禾隔離檢查失敗，中止部署" >&2; exit 1; }; echo "⚠️ 矩陣區塊產生有問題（不影響部署）"; }   # 矩陣網站：相關網站、延伸閱讀、問診、GEO（2026-10-24）
 git add -A
 if git diff --cached --quiet; then echo "資料無變動，不需部署"; exit 0; fi
 git commit -qm "新聞更新 $(TZ=Asia/Taipei date '+%Y-%m-%d %H:%M')"
