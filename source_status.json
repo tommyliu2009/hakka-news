@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27 05:07",
+ "updated": "2026-10-28 05:03",
  "sources": {
   "內政部移民署": {
    "ok": true,
@@ -39,7 +39,7 @@
   },
   "官方/中央社索引 (site:gov.tw)": {
    "ok": true,
-   "note": "候選 74 則"
+   "note": "候選 64 則"
   },
   "官方/中央社索引 (site:cna.com.tw)": {
    "ok": true,
@@ -47,11 +47,11 @@
   },
   "官方/中央社索引 (site:hakka.gov.tw)": {
    "ok": true,
-   "note": "候選 22 則"
+   "note": "候選 15 則"
   },
   "官方/中央社索引 (site:gov.taipei)": {
    "ok": true,
-   "note": "候選 16 則"
+   "note": "候選 9 則"
   },
   "索引 ntpc.gov.tw": {
    "ok": true,
@@ -67,11 +67,11 @@
   },
   "索引 tainan.gov.tw": {
    "ok": true,
-   "note": "相關 4"
+   "note": "相關 2"
   },
   "索引 kcg.gov.tw": {
    "ok": true,
-   "note": "相關 0"
+   "note": "相關 1"
   },
   "索引 klcg.gov.tw": {
    "ok": true,
@@ -95,7 +95,7 @@
   },
   "索引 nantou.gov.tw": {
    "ok": true,
-   "note": "相關 0"
+   "note": "相關 1"
   },
   "索引 yunlin.gov.tw": {
    "ok": true,
@@ -111,7 +111,7 @@
   },
   "索引 pthg.gov.tw": {
    "ok": true,
-   "note": "相關 0"
+   "note": "相關 1"
   },
   "索引 e-land.gov.tw": {
    "ok": true,
@@ -151,7 +151,7 @@
   },
   "_原文取不到發布日（未收錄）": {
    "ok": true,
-   "note": "3 則"
+   "note": "5 則"
   },
   "_原文無法讀取的網站（未收錄）": {
    "ok": true,
