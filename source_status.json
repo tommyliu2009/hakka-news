@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02 05:05",
+ "updated": "2026-11-03 05:08",
  "sources": {
   "內政部移民署": {
    "ok": true,
@@ -19,7 +19,7 @@
   },
   "中央社-政治": {
    "ok": true,
-   "note": "20 則，相關 1"
+   "note": "20 則，相關 0"
   },
   "中央社-社會": {
    "ok": true,
@@ -27,7 +27,7 @@
   },
   "中央社-地方": {
    "ok": true,
-   "note": "20 則，相關 1"
+   "note": "20 則，相關 0"
   },
   "中央社-國際": {
    "ok": true,
@@ -39,15 +39,15 @@
   },
   "官方/中央社索引 (site:gov.tw)": {
    "ok": true,
-   "note": "候選 50 則"
+   "note": "候選 54 則"
   },
   "官方/中央社索引 (site:cna.com.tw)": {
    "ok": true,
-   "note": "候選 8 則"
+   "note": "候選 18 則"
   },
   "官方/中央社索引 (site:hakka.gov.tw)": {
    "ok": true,
-   "note": "候選 22 則"
+   "note": "候選 28 則"
   },
   "官方/中央社索引 (site:gov.taipei)": {
    "ok": false,
@@ -59,11 +59,11 @@
   },
   "索引 tycg.gov.tw": {
    "ok": true,
-   "note": "相關 1"
+   "note": "相關 0"
   },
   "索引 taichung.gov.tw": {
    "ok": true,
-   "note": "相關 2"
+   "note": "相關 1"
   },
   "索引 tainan.gov.tw": {
    "ok": true,
@@ -75,7 +75,7 @@
   },
   "索引 klcg.gov.tw": {
    "ok": true,
-   "note": "相關 2"
+   "note": "相關 0"
   },
   "索引 hccg.gov.tw": {
    "ok": true,
@@ -87,11 +87,11 @@
   },
   "索引 miaoli.gov.tw": {
    "ok": true,
-   "note": "相關 2"
+   "note": "相關 4"
   },
   "索引 chcg.gov.tw": {
    "ok": true,
-   "note": "相關 1"
+   "note": "相關 2"
   },
   "索引 nantou.gov.tw": {
    "ok": true,
@@ -107,7 +107,7 @@
   },
   "索引 cyhg.gov.tw": {
    "ok": true,
-   "note": "相關 1"
+   "note": "相關 0"
   },
   "索引 pthg.gov.tw": {
    "ok": true,
@@ -151,7 +151,7 @@
   },
   "_原文取不到發布日（未收錄）": {
    "ok": true,
-   "note": "6 則"
+   "note": "8 則"
   },
   "_原文無法讀取的網站（未收錄）": {
    "ok": false,
