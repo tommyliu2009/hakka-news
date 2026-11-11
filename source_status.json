@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11 05:09",
+ "updated": "2026-11-12 05:04",
  "sources": {
   "內政部移民署": {
    "ok": true,
@@ -43,15 +43,15 @@
   },
   "官方/中央社索引 (site:cna.com.tw)": {
    "ok": true,
-   "note": "候選 22 則"
+   "note": "候選 28 則"
   },
   "官方/中央社索引 (site:hakka.gov.tw)": {
    "ok": true,
-   "note": "候選 61 則"
+   "note": "候選 52 則"
   },
   "官方/中央社索引 (site:gov.taipei)": {
    "ok": true,
-   "note": "候選 4 則"
+   "note": "候選 2 則"
   },
   "索引 ntpc.gov.tw": {
    "ok": true,
@@ -63,7 +63,7 @@
   },
   "索引 taichung.gov.tw": {
    "ok": true,
-   "note": "相關 2"
+   "note": "相關 5"
   },
   "索引 tainan.gov.tw": {
    "ok": true,
@@ -71,7 +71,7 @@
   },
   "索引 kcg.gov.tw": {
    "ok": true,
-   "note": "相關 2"
+   "note": "相關 3"
   },
   "索引 klcg.gov.tw": {
    "ok": true,
@@ -79,15 +79,15 @@
   },
   "索引 hccg.gov.tw": {
    "ok": true,
-   "note": "相關 1"
+   "note": "相關 0"
   },
   "索引 hsinchu.gov.tw": {
    "ok": true,
-   "note": "相關 1"
+   "note": "相關 0"
   },
   "索引 miaoli.gov.tw": {
    "ok": true,
-   "note": "相關 2"
+   "note": "相關 3"
   },
   "索引 chcg.gov.tw": {
    "ok": true,
@@ -95,11 +95,11 @@
   },
   "索引 nantou.gov.tw": {
    "ok": true,
-   "note": "相關 0"
+   "note": "相關 2"
   },
   "索引 yunlin.gov.tw": {
    "ok": true,
-   "note": "相關 1"
+   "note": "相關 2"
   },
   "索引 chiayi.gov.tw": {
    "ok": true,
@@ -111,7 +111,7 @@
   },
   "索引 pthg.gov.tw": {
    "ok": true,
-   "note": "相關 4"
+   "note": "相關 3"
   },
   "索引 e-land.gov.tw": {
    "ok": true,
@@ -123,7 +123,7 @@
   },
   "索引 taitung.gov.tw": {
    "ok": true,
-   "note": "相關 1"
+   "note": "相關 0"
   },
   "索引 penghu.gov.tw": {
    "ok": true,
@@ -143,7 +143,7 @@
   },
   "索引 ocac.gov.tw": {
    "ok": true,
-   "note": "相關 0"
+   "note": "相關 1"
   },
   "索引 moi.gov.tw": {
    "ok": true,
@@ -151,11 +151,11 @@
   },
   "_原文取不到發布日（未收錄）": {
    "ok": true,
-   "note": "20 則"
+   "note": "18 則"
   },
   "_原文無法讀取的網站（未收錄）": {
    "ok": false,
-   "note": "civil.yunlin.gov.tw 1則(HTTP 403); minsyong.cyhg.gov.tw 1則(SSLError); gukeng.yunlin.gov.tw 1則(HTTP 403)"
+   "note": "minsyong.cyhg.gov.tw 1則(SSLError); civil.yunlin.gov.tw 1則(HTTP 403); gukeng.yunlin.gov.tw 1則(HTTP 403); kcginfo.kcg.gov.tw 1則(ReadTimeout)"
   }
  }
 }

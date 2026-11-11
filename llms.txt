@@ -4,7 +4,7 @@
 
 - 網址：https://web2.subsidyking.tw/
 - 主題：客家新聞與客庄政策
-- 更新：2026-11-11（每日自動更新）
+- 更新：2026-11-12（每日自動更新）
 - 資料來源：各機關官方網站與媒體原文，每則附原始出處連結
 - 維護：仁禾管理顧問
 
@@ -36,7 +36,6 @@
 - 2026-11-06 「苗栗2026風箏文化暨客家美食節」11/6晚間璀璨登場：https://www.miaoli.gov.tw/News_Content2.aspx?n=285&s=1012377
 
 ## 相關網站
-- 補助王：https://www.subsidyking.tw/
 - 農業部新聞網：https://web9.subsidyking.tw/
 - 中部新聞網：https://web12.subsidyking.tw/
 - 台灣政府補助新聞網：https://news.subsidyking.tw/
