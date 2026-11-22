@@ -23,7 +23,7 @@ function side() {
     units[n.category] = units[n.category] || {};
     units[n.category][n.unit] = (units[n.category][n.unit] || 0) + 1;
   });
-  let h = '<div class="box"><h3>關於這個展示版</h3><p>卡片都是虛構範例。正式欄目會改放可查證的公開資訊，並附上原始連結。</p><p><a href="about.html">閱讀宗旨與編輯原則</a></p></div>';
+  let h = '<div class="box"><h3>關於本站</h3><p>新聞摘要依公開原文整理，並附原始連結；標示「虛構情境」的卡片是版面範例，不是新聞。</p><p><a href="about.html">閱讀宗旨與編輯原則</a></p></div>';
   h += '<div class="box"><h3>來源單位</h3>';
   h += ORDER.filter(c => units[c]).map(c => {
     const list = Object.entries(units[c]).sort((a, b) => b[1] - a[1]).map(([u, k]) =>
@@ -31,7 +31,7 @@ function side() {
     ).join('');
     return `<p class="grp">${esc(c)}</p><ul class="units">${list}</ul>`;
   }).join('') + '</div>';
-  h += '<div class="box"><h3>最新範例</h3><ol class="latest">' + N.slice(0, 8).map(n =>
+  h += '<div class="box"><h3>最新消息</h3><ol class="latest">' + N.slice(0, 8).map(n =>
     `<li><a href="${esc(hrefOf(n))}">${esc(n.title)}</a><time datetime="${esc(n.date)}">${esc(n.date)}｜${esc(n.unit)}</time></li>`
   ).join('') + '</ol></div>';
   $$('.side').forEach(s => { s.innerHTML = h; });
@@ -45,7 +45,7 @@ function home() {
     $('#blocks').innerHTML = '';
     return;
   }
-  lead.innerHTML = `<article class="lead">${meta(l)}<h2><a href="${esc(hrefOf(l))}">${esc(l.title)}</a></h2><p class="sum">${esc(l.summary)}</p><button type="button" class="tog" aria-expanded="false">展開摘要</button><a class="src" href="${esc(hrefOf(l))}">閱讀範例說明</a></article>`;
+  lead.innerHTML = `<article class="lead">${meta(l)}<h2><a href="${esc(hrefOf(l))}">${esc(l.title)}</a></h2><p class="sum">${esc(l.summary)}</p><button type="button" class="tog" aria-expanded="false">展開摘要</button><a class="src" href="${esc(hrefOf(l))}"${srcAttrs(l)}>${srcText(l)}</a></article>`;
   $('#subs').innerHTML = '<h2 class="kicker">焦點</h2>' + r.slice(0, 4).map(n =>
     `<article class="subh">${meta(n)}<h3><a href="${esc(hrefOf(n))}">${esc(n.title)}</a></h3></article>`
   ).join('');
@@ -60,7 +60,7 @@ function catv() {
   $('#ctitle').textContent = cat + (unit ? '｜' + unit : '');
   $('#cdek').textContent = DEK[cat] || '';
   const clear = unit ? ` <a href="./#${encodeURIComponent(cat)}" data-c="${esc(cat)}" data-u="">顯示全部單位</a>` : '';
-  $('#cmeta').innerHTML = `共 ${a.length} 則範例` + clear;
+  $('#cmeta').innerHTML = `共 ${a.length} 則` + clear;
   $('#clist').innerHTML = a.length
     ? a.slice(0, shown).map(n => card(n, 'card row')).join('')
     : '<p class="empty">這個條件目前沒有稿件。</p>';

@@ -18,7 +18,7 @@ function one(n) {
 }
 function index() {
   document.title = '範例稿一覽｜客家全球新聞網';
-  const items = window.NEWS || [];
+  const items = (window.NEWS || []).filter(n => n.sample);
   root.innerHTML = `<header class="page"><h1>範例稿一覽</h1><p class="lede">以下全部是虛構情境，用來審查欄目與摘要長度。不是新聞。</p></header>` +
     ORDER.map(c => {
       const list = items.filter(n => n.category === c);
@@ -30,7 +30,7 @@ function index() {
 }
 function render() {
   const id = decodeURIComponent((location.hash || '').replace(/^#/, ''));
-  const n = (window.NEWS || []).find(x => x.id === id);
+  const n = (window.NEWS || []).find(x => x.id === id && x.sample);
   if (n) one(n); else index();
 }
 addEventListener('hashchange', render);
